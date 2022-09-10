@@ -21,7 +21,7 @@ export async function handleTicket({ interaction, message }) {
 
   console.log(interaction.member);
   await supportChannel.send(
-    `<@${selectedModID}>, ${interaction.member.user.username} needs your assistance with Ticket #${ticketID}. Here are some details: \`\`\`${message}\`\`\``
+    `[TICKET] <@${selectedModID}> -- ${interaction.member.user.username} needs your assistance with **Ticket #${ticketID}**. Here are some details: \`\`\`${message}\`\`\``
   );
 
   // Let the user know that support is on their way!
